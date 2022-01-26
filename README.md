@@ -1,0 +1,2 @@
+# odin-recipes
+This project is part of the curriculum of The Odin Project. In this exercise, we are practicing using Git, Github, and HTML (linking using the anchor tag, embedding images, headers, lists, and sub-lists). Once complete, this should be a semi-functional recipe website using headers and paragraphs. Presumably, there will be an exercise further along to beautify this website using CSS.
