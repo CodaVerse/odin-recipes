@@ -1,88 +1,64 @@
 <html>
-<!--Only the head and body elements are supposed to be direct descendants of the html element. All others should be descendants of either the head or body-->
-
 <head>
-    <!--The head element must be a direct descendant of the html element-->
-    <!--The head element is a very busy place for most websites, so we've created a tutorial to walk you through the different elements and tasks accomplished in the head element. You can find it at the following address: https://html.com/document/metadata/ -->
     <title>Guacamole Recipe</title>
+    <link rel='stylesheet' href='../css/style.css'>
 </head>
-
 <body>
     <script src="js/scripts.js"></script>
-    <!--The body element contains the full visible content of the web page-->
     <header>
-        <!--The header typically includes your logo, tagline, and may contain a nav element-->
-        <nav>
+        <nav id='home'>
             <a href="../index.html">Back to Home</a>
-            <!--The nav element isn't used for every single link but for navigational menus-->
         </nav>
     </header>
     <main>
         <h1>Guacamole</h1>
-        <img src="../img/guacamole.jpg" alt="Picture of guacamole">
-        <h2>Description of the dish:</h2>
-        <p>Guacamole is an avocado-based dip, spread, or salad first developed in Mexico. It has become part of international and American cuisine as a dip, condiment and salad ingredient.</p>
-        <p>In addition to being cold and refreshing, the guacamole recipe can often benefit form increasing the heat content, using additional jalapeno or serrano peppers. The recipe below can be scaled for a large yield with little extra effort, making this a great option for potlucks or to enjoy for a few extra days.</p>
+        <div class='imgflex'>
+            <div class='image-container'>
+                <img src="../img/guacamole.jpg" alt="Picture of guacamole" class='solo-pic'>
+            </div>
+            <div class='description'>
+            <h2>Description of the dish:</h2>
+            <p>Guacamole is an avocado-based dip, spread, or salad first developed in Mexico. It has become part of international and American cuisine as a dip, condiment and salad ingredient.</p>
+            <p>In addition to being cold and refreshing, the guacamole recipe can often benefit form increasing the heat content, using additional jalapeno or serrano peppers. The recipe below can be scaled for a large yield with little extra effort, making this a great option for potlucks or to enjoy for a few extra days.</p>
+            </div>
+        </div>
         <h2>Ingredients</h2>
-        <ul>
-            <li>4 ripe Haas avocados (Haas is mandatory for taste - non-negotiable!)</li>
-            <li>6 large garlic cloves or 1 large tablespoon minced garlic</li>
-            <li>1/2 yellow pepper, diced medium to small</li>
-            <li>1-2 jalapenos or serranos to taste</li>
-            <li>1/2 to 1 can white kidney beans for bulk</li>
-            <li>1/2 head of cilantro</li>
-            <li>1/2 medium red onion</li>
-            <li>1 lime</li>
-            <li>2 Roma tomatoes</li>
-            <li>Sea salt</li>
-            <li>Fresh ground black pepper</li>
-            <li>Distilled white vinegar</li>
-            <li>Optional: Tabasco (Chipotle or regular), cayenne pepper</li>
-        </ul>
+        <div class='listdiv'>
+            <ul class='vertical-ul'>
+                <li>4 ripe Haas avocados (Haas is mandatory for taste - non-negotiable!)</li>
+                <li>6 large garlic cloves or 1 large tablespoon minced garlic</li>
+                <li>1/2 yellow pepper, diced medium to small</li>
+                <li>1-2 jalapenos or serranos to taste</li>
+                <li>1/2 to 1 can white kidney beans for bulk</li>
+                <li>1/2 head of cilantro</li>
+                <li>1/2 medium red onion</li>
+                <li>1 lime</li>
+                <li>2 Roma tomatoes</li>
+                <li>Sea salt</li>
+                <li>Fresh ground black pepper</li>
+                <li>Distilled white vinegar</li>
+                <li>Optional: Tabasco (Chipotle or regular), cayenne pepper</li>
+            </ul>
+        </div>
         <h2>Preparation Steps</h2>
-        <ol>
-            <li>Remove peels and seeds from avocados. Consider leaving a half untouched until the end if you prefer it chunky. If so, complete all the mixing steps below, then add the last half diced to incorporate a chunky consistency.</li>
-            <li>Add the avocados to a mixing bowl and mash to the desired consistency. A food processor can be used to make quick work of this.</li>
-            <li>Add the garlic to the avocado paste</li>
-            <li>Mix the avocado with the kidney beans to add some bulk</li>
-            <li>Dice up the red onion, yellow pepper, jalapeno (or serrano) peppers</li>
-            <li>Slowly add onions and peppers, ensuring not to overcrowd the mixture. It should be mostly avocado, but large additions can throw off the proportions. Be careful!</li>
-            <li>Incorporate the half-head of cilantro</li>
-            <li>Next, add a half teaspoon of sea salt and a half teaspoon of frsh ground black pepper</li>
-            <li>Add roughly 1 teaspoon of distilled white vinegar to give the dish a small acidic bite</li>
-            <li>Lastly, dice up the tomatoes and gently spatulate into the mixture. This is done last to keep the tomatoes from getting squishy.</li>
-            <br>
-            <em>Optional ingredients can be added to taste if there is more spice desired</em>
-        </ol>
-        <!--The main element cannot be used inside of anything other than the body element. It is intended to hold the main content of the page.-->
-        <nav>
-            <!--You can use a nav element just about anywhere-->
-        </nav>
-        <article>
-            <!--If your web page contains a blog post or news article it makes sense to wrap the whole article in article tags-->
-            <aside>
-                <!--The aside tag can be used within an article or outside of it. It is used to mark content that is related but not central to the main content of the page-->
-            </aside>
-            <section>
-                <!--Sections are used to seperate major parts of an element, such as chapters of an HTML ebook, or to cordone off the comments section from the rest of the main element-->
-            </section>
-            <address>
-                <!--An address element inside of an article element is used to provide contact info for the author of the article-->
-            </address>
-        </article>
-        <aside>
-            <!--The aside element would also be used to mark a sidebar if used outside of the main element-->
-            <section>
-                <!--Within a sidebar you could use section elements to identify the different parts of the sidebar. For example, you could put adds in one section, related posts in a second section, and a newsletter signup form in a third section element.-->
-            </section>
-        </aside>
+        <div class='listdiv'>
+            <ol class='vertical-ol'>
+                <li>Remove peels and seeds from avocados. Consider leaving a half untouched until the end if you prefer it chunky. If so, complete all the mixing steps below, then add the last half diced to incorporate a chunky consistency.</li>
+                <li>Add the avocados to a mixing bowl and mash to the desired consistency. A food processor can be used to make quick work of this.</li>
+                <li>Add the garlic to the avocado paste</li>
+                <li>Mix the avocado with the kidney beans to add some bulk</li>
+                <li>Dice up the red onion, yellow pepper, jalapeno (or serrano) peppers</li>
+                <li>Slowly add onions and peppers, ensuring not to overcrowd the mixture. It should be mostly avocado, but large additions can throw off the proportions. Be careful!</li>
+                <li>Incorporate the half-head of cilantro</li>
+                <li>Next, add a half teaspoon of sea salt and a half teaspoon of frsh ground black pepper</li>
+                <li>Add roughly 1 teaspoon of distilled white vinegar to give the dish a small acidic bite</li>
+                <li>Lastly, dice up the tomatoes and gently spatulate into the mixture. This is done last to keep the tomatoes from getting squishy.</li>
+                <br>
+                <em>Optional ingredients can be added to taste if there is more spice desired</em>
+            </ol>
+        </div>
     </main>
     <footer>
-        <!--The footer typically contains links to things like About Us, Privacy Policy, Contact Us and so forth. It may also contain a nav, address, section, or aside element.-->
-        <address>
-            <!--Put an address element in the footer and you're indicating that the contact info within the element is for the owner of the website rather than the author of the article.-->
-        </address>
     </footer>
 </body>
-
 </html>
